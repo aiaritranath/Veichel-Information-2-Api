@@ -6,6 +6,12 @@
       "use": "@vercel/node"
     }
   ],
+  "functions": {
+    "api/rc.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
   "routes": [
     {
       "src": "/api/rc",
